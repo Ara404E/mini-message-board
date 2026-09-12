@@ -1,0 +1,10 @@
+    <link rel="stylesheet" href="/style.css">
+
+<ul>
+    <% messages.forEach((message) => { %>
+        <li>
+            <a href="message/<%= message.id %>">   <%= message.text %>    </a>
+            
+        </li>
+    <% }) %>
+</ul>

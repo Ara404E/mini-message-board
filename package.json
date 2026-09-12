@@ -1,0 +1,33 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ara404E/mini-message-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ara404E/mini-message-board/issues"
+  },
+  "homepage": "https://github.com/Ara404E/mini-message-board#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
