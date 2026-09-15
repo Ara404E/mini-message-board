@@ -14,22 +14,22 @@ indexRouter.get('/new', (req, res) => {
 })
 
 indexRouter.post("/new", (req, res) => {
-  const { username, message } = req.body;
+
+  const username = req.body.username?.trim();
+  const message = req.body.message?.trim();
+
 
   
   if (!username) {
     return res.status(400).send('Username must be entered');
   }
-  else if (!message) {
+  
+  if (!message) {
     return res.status(400).send("Can't send a blank message");
   }
-  else {
     messages.push({ id: crypto.randomUUID() ,text: message, user: username, added: new Date() })
-    console.log(`"message": ${message}`)
-    console.log(`"user": ${username}`);
-
     res.redirect('/')
-  }
+  
 
 });
 
